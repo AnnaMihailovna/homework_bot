@@ -42,7 +42,7 @@ def check_tokens():
 
 
 def send_message(bot, message):
-    """Отправляет сообщение в Telegram чат,
+    """Отправляет сообщение в Telegram чат.
     определяемый переменной окружения TELEGRAM_CHAT_ID.
     """
     try:
@@ -53,7 +53,7 @@ def send_message(bot, message):
 
 
 def get_api_answer(timestamp):
-    """Делает запрос к единственному эндпоинту
+    """Делает запрос к единственному эндпоинту.
     API-сервиса Практикум.Домашка.
     """
     params = {'from_date': timestamp}
@@ -93,7 +93,7 @@ def check_response(response):
 
 
 def parse_status(homework):
-    """Извлекает из информации о конкретной домашней
+    """Извлекает из информации о конкретной домашней.
     работе статус этой работы.
     """
     if homework.get('homework_name'):
